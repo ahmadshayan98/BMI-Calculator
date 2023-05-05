@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <h3>
+        <ul>
+            <li>If your BMI is less than 18.5, it falls within the underweight range.</li>
+            <li>If your BMI is 18.5 to <25, it falls within the healthy weight range.</li>
+            <li>If your BMI is 25.0 to <30, it falls within the overweight range.</li>
+            <li>If your BMI is 30.0 or higher, it falls within the obesity range.</li>
+        </ul>
+        Obesity is frequently subdivided into categories:
+
+        <ul>
+            <li>Class 1: BMI of 30 to < 35</li>
+            <li>Class 2: BMI of 35 to < 40</li>
+            <li>Class 3: BMI of 40 or higher. Class 3 obesity is sometimes categorized as “severe” obesity.</li>
+        </ul>
+    </h3>
+    
+    <form onsubmit="bmi(); return false">
+        <fieldset>
+        <label for="h">Height in feet</label>
+        <input type="number" name="h" id="ht">
+        <br>
+        <br>
+
+        <label for="m">Body weight in kilograms</label>
+        <input type="number" name="m" id="ms">
+        <br>
+        <br>
+
+        <button type="submit">Calculate BMI</button>
+        
+        <p id="res">*Calculated BMI will be shown here*</p>
+    </fieldset>
+    </form>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
